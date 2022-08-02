@@ -1,8 +1,9 @@
 public class Coche {
     public int puertas;
 
-    public Coche() {
-        this.puertas=0;
+    public Coche(int puertas) {
+
+        this.puertas=puertas;
     }
 
     public void add_puerta(){
@@ -10,7 +11,7 @@ public class Coche {
     }
 
     public static void main(String[] args) {
-        Coche miCoche = new Coche();
+        Coche miCoche = new Coche(4);
         miCoche.add_puerta();
         System.out.println("Mi coche tiene " + miCoche.puertas + " puertas.");
     }
